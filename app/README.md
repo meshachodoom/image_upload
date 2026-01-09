@@ -28,7 +28,7 @@ POST /api/v1/upload
 Upload an image file for analysis.
 
 Request:
-
+Headers: X-API-KEY
 Content-Type: multipart/form-data
 Body: file (JPEG or PNG, max 5MB)
 
@@ -37,6 +37,7 @@ POST /api/v1/analyze
 
 Perform analysis on a previously uploaded image.
 
+Headers: X-API-KEY
 Request:
 {
   "image_id": "12345"
